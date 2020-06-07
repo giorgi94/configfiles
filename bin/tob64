@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+import base64
+import sys
+
+
+s = input("Enter text: ")
+
+print("Output:", base64.b64encode(s.encode()).decode())

@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+import argparse
+
+import sys
+from os import mkdir, system, getcwd
+from os.path import dirname, isdir, isfile, join
+
+base_dir = getcwd()
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--pdf", action="store_true")
+parser.add_argument("-f", "--file", action="store", required=True)
+
+args = parser.parse_args()
+
+
+def main():
+
+    texfile = join(base_dir, args.file)
+    compiler = "pdflatex" if args.pdf else "xelatex"
+
+    if not isfile(texfile):
+        return print("file not found")
+
+    output_dir = join(dirname(texfile), "output")
+
+    if not isdir(output_dir):
+        mkdir(output_dir)
+
+    command = f'{compiler} -synctex=1 -interaction=nonstopmode -output-directory="{output_dir}" "{texfile}"'
+    system(command)
+
+
+main()
