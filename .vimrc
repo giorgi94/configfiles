@@ -1,4 +1,3 @@
-set number
 set noswapfile
 set nobackup
 set encoding=utf-8
