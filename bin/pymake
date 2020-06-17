@@ -2,8 +2,8 @@
 import argparse
 import sys
 import importlib
-from os import listdir, system, getcwd
-from os.path import dirname, abspath, join, isfile
+from os import listdir, getcwd
+from os.path import isfile
 
 
 sys.path.append(getcwd())
@@ -13,34 +13,37 @@ if isfile("make.py"):
 else:
     make = None
 
+parser = argparse.ArgumentParser()
 
-class CLIManager:
-    def run(self, command, Args):
 
-        if make is not None:
-            if hasattr(make, command):
-                func = getattr(make, command)
-                return func(Args)
+def ls(Args):
+    parser.add_argument("-d", "--dir", action="store", type=str, default=".")
+    args = parser.parse_args(Args)
+    print(listdir(args.dir))
 
-        if not hasattr(self, command):
-            return print(f'Command "{command}" is not defined')
 
-        func = getattr(self, command)
+def _main():
+    if len(sys.argv) < 2:
+        return print("not enough arguments")
 
-        return func(Args)
+    _, command, *Args = sys.argv
 
-    def ls(self, Args):
-        parser = argparse.ArgumentParser()
-        parser.add_argument("-d", "--dir", action="store", type=str, default=".")
-        args = parser.parse_args(Args)
-        print(listdir(args.dir))
+    if command.startswith("_"):
+        return print("Command must not start with '_'")
+
+    if make is not None:
+        if hasattr(make, command):
+            func = getattr(make, command)
+            return func(Args)
+
+    g = globals()
+
+    if command in g:
+        return g[command](Args)
+
+    print(f"command '{command}' is not defined")
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("not enough arguments")
-    else:
-        _, command, *Args = sys.argv
+    _main()
 
-        cli = CLIManager()
-        cli.run(command, Args)
