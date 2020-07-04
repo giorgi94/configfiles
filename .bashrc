@@ -18,8 +18,8 @@ export MANPATH=$MANPATH:$TEXLIVE_HOME/2018/texmf-dist/doc/man
 export INFOPATH=$INFOPATH:$TEXLIVE_HOME/2018/texmf-dist/doc/man
 
 alias pyenv="virtualenv -p python3 env"
-alias py="python3"
-alias py8="python3.8"
+alias py="python3.8"
+
 
 alias tlmgr="$TEXLIVE_HOME/2018/bin/x86_64-linux/tlmgr"
 

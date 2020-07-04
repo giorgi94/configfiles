@@ -63,7 +63,6 @@
     "typescript.validate.enable": false,
     "javascript.validate.enable": false,
     "typescript.suggestionActions.enabled": false,
-    "html.format.enable": false,
     "breadcrumbs.enabled": true,
     "git.confirmSync": false,
     "editor.minimap.enabled": false,
@@ -108,5 +107,5 @@
         "source.fixAll.eslint": true
     },
     "terminal.integrated.allowChords": false,
-    "python.pythonPath": "/usr/bin/python3"
+    "python.defaultInterpreterPath": "/usr/bin/python3"
 }
