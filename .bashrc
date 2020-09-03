@@ -17,12 +17,13 @@ export CPLUS_INCLUDE_PATH=/usr/include/python3.6
 export MANPATH=$MANPATH:$TEXLIVE_HOME/2018/texmf-dist/doc/man
 export INFOPATH=$INFOPATH:$TEXLIVE_HOME/2018/texmf-dist/doc/man
 
-alias pyenv="virtualenv -p python3 env"
+alias pyenv="virtualenv -p python3.8 env"
 alias py="python3.8"
 
 
 alias tlmgr="$TEXLIVE_HOME/2018/bin/x86_64-linux/tlmgr"
 
+alias nets="netstat -anlp"
 
 alias config='/usr/bin/git --git-dir=$HOME/configfiles/ --work-tree=$HOME'
 

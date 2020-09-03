@@ -2,7 +2,7 @@
 import argparse
 import sys
 import importlib
-from os import listdir, getcwd
+from os import listdir, getcwd, system
 from os.path import isfile
 
 
@@ -22,8 +22,22 @@ def ls(Args):
     print(listdir(args.dir))
 
 
+def push(Args):
+
+    system("git push db $(git rev-parse --abbrev-ref HEAD)")
+
+
+def pull(Args):
+
+    system("git pull db $(git rev-parse --abbrev-ref HEAD)")
+
+
 def _main():
     if len(sys.argv) < 2:
+        if hasattr(make, "default"):
+            func = getattr(make, "default")
+            return func([])
+
         return print("not enough arguments")
 
     _, command, *Args = sys.argv
@@ -46,4 +60,3 @@ def _main():
 
 if __name__ == "__main__":
     _main()
-

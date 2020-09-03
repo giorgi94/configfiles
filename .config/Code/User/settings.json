@@ -1,8 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "beautify.ignore": [
-        "**/*.js"
-    ],
+    "beautify.ignore": ["**/*.js"],
     "eslint.enable": false,
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
@@ -10,12 +8,10 @@
     "editor.detectIndentation": false,
     "files.associations": {
         "*.mustache": "html",
-        "*.cam": "json",
         "*.pyx": "python",
         "*.py.jinja2": "python"
     },
     "files.exclude": {
-        "**/*.sqlite3": true,
         "**/*.pyc": true,
         "**/package-lock.json": true,
         "**/bower_components": true,
@@ -37,29 +33,8 @@
         "vue-html": "html",
         "vue": "html"
     },
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "svelte",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        },
-        {
-            "language": "javascriptreact",
-            "autoFix": true
-        }
-    ],
     "editor.wordWrap": "on",
-    "editor.rulers": [
-        88
-    ],
+    "editor.rulers": [88],
     "typescript.validate.enable": false,
     "javascript.validate.enable": false,
     "typescript.suggestionActions.enabled": false,
@@ -67,12 +42,11 @@
     "git.confirmSync": false,
     "editor.minimap.enabled": false,
     "vetur.format.options.tabSize": 4,
-    "go.lintTool": "gometalinter",
+    "go.lintTool": "golint",
     "go.formatTool": "gofmt",
     "go.gopath": "/home/gio/Documents/golang/packages",
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.opacity": 1,
-    "latex-workshop.latex.autoBuild.run": "never",
     "C_Cpp.default.cppStandard": "c++14",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
@@ -80,12 +54,6 @@
     },
     "C_Cpp.updateChannel": "Insiders",
     "update.mode": "none",
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
     "prettier.tabWidth": 4,
     "latex-workshop.bind.enter.key": false,
     "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
@@ -103,9 +71,7 @@
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
     "terminal.integrated.allowChords": false,
-    "python.defaultInterpreterPath": "/usr/bin/python3"
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "github.gitAuthentication": false
 }
