@@ -73,5 +73,6 @@
     },
     "terminal.integrated.allowChords": false,
     "python.defaultInterpreterPath": "/usr/bin/python3",
-    "github.gitAuthentication": false
+    "github.gitAuthentication": false,
+    "python.languageServer": "Pylance"
 }
