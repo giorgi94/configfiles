@@ -6,7 +6,8 @@ syntax on
 filetype indent plugin on
 
 set list
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·
+"" set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,space:·
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 
 hi SpecialKey ctermfg=grey guifg=grey70
 
@@ -23,5 +24,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+Plugin 'dag/vim-fish'
 
 call vundle#end()

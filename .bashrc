@@ -5,8 +5,7 @@ export GOPATH=$HOME/Documents/golang/packages
 export JAVA_HOME=$HOME/Documents/java/jdk
 
 
-
-export PATH=$PATH:$HOME/Documents/NodeJS/bin:$HOME/Documents/sublime_text:$HOME/Documents/blender/:$HOME/Documents/VSCode:$TEXLIVE_HOME/2018/bin/x86_64-linux:$HOME/Documents/golang/go/bin:$GOPATH/bin:$HOME/Documents/redis/src:$HOME/Documents/julia/bin:$HOME/Documents/mongodb/bin:$HOME/Documents/pypy/pypy3/bin
+export PATH=$PATH:$HOME/Documents/NodeJS/bin:$HOME/Documents/sublime_text:$HOME/Documents/blender:$TEXLIVE_HOME/2018/bin/x86_64-linux:$HOME/Documents/golang/go/bin:$GOPATH/bin:$HOME/Documents/redis/src:$HOME/Documents/mongodb/bin
 
 
 export PATH=$JAVA_HOME/bin:$PATH
@@ -113,6 +112,7 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
+
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir

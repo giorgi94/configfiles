@@ -1,7 +1,5 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "beautify.ignore": ["**/*.js"],
-    "eslint.enable": false,
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
@@ -22,6 +20,8 @@
     "python.formatting.provider": "black",
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": false,
+    "python.languageServer": "Pylance",
+    "python.defaultInterpreterPath": "/usr/bin/python3.8",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
@@ -42,15 +42,15 @@
     "git.confirmSync": false,
     "editor.minimap.enabled": false,
     "vetur.format.options.tabSize": 4,
-    "go.lintTool": "golint",
-    "go.formatTool": "gofmt",
-    "go.gopath": "/home/gio/Documents/golang/packages",
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.opacity": 1,
     "C_Cpp.default.cppStandard": "c++14",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[latex]": {
+        "editor.formatOnSave": false
     },
     "C_Cpp.updateChannel": "Insiders",
     "update.mode": "none",
@@ -68,11 +68,18 @@
     "latex-workshop.message.warning.show": false,
     "latex-workshop.progress.enabled": false,
     "latex-workshop.latex.autoBuild.run": "never",
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
     "terminal.integrated.allowChords": false,
-    "python.defaultInterpreterPath": "/usr/bin/python3",
     "github.gitAuthentication": false,
-    "python.languageServer": "Pylance"
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.analysis.autoImportCompletions": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
