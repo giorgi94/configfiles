@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+from math import *
+import sys
+
+
+def calc():
+    args = sys.argv[1:]
+    if not args:
+        return
+    print(eval(args[0]))
+
+
+
+
+if __name__ == "__main__":
+    calc()
