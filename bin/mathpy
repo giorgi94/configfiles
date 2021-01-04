@@ -8,9 +8,10 @@ def calc():
     args = sys.argv[1:]
     if not args:
         return
-    print(eval(args[0]))
-
-
+    try:
+        print(eval("".join(sys.argv[1:])))
+    except Exception as e:
+        print("invalid expression: ", e)
 
 
 if __name__ == "__main__":
