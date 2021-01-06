@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32px"
+   height="32px"
+   id="svg4406"
+   version="1.1"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="geo.svg">
+  <defs
+     id="defs4408">
+    <filter
+       id="filter4374"
+       inkscape:menu-tooltip="Draws a black outline around"
+       inkscape:menu="ABCs"
+       inkscape:label="Black outline"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur4376"
+         stdDeviation="2"
+         in="SourceAlpha"
+         result="result0" />
+      <feComposite
+         k4="0"
+         k1="0"
+         in2="result0"
+         id="feComposite4378"
+         result="result3"
+         operator="arithmetic"
+         in="SourceGraphic"
+         k2="1"
+         k3="10" />
+      <feComposite
+         in2="result3"
+         id="feComposite4380"
+         operator="in"
+         in="result3"
+         result="result4" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8"
+     inkscape:cx="8.9057351"
+     inkscape:cy="21.2431"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1440"
+     inkscape:window-height="843"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4469" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4411">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <g
+       aria-label="GE"
+       transform="matrix(0.99157923,0,0,1.4698275,-3.3159857,-3.3159861)"
+       id="text4471"
+       style="font-style:normal;font-weight:normal;font-size:9.99841px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.83319">
+      <path
+         d="m 18.209885,16.309576 v -2.385598 h -1.96321 v -0.987554 h 3.153034 v 3.813387 q -0.696047,0.493777 -1.534873,0.749589 -0.838826,0.249863 -1.790685,0.249863 -2.082193,0 -3.260119,-1.213621 -1.171976,-1.21957 -1.171976,-3.390999 0,-2.177378 1.171976,-3.3909987 1.177926,-1.2195698 3.260119,-1.2195698 0.868571,0 1.647906,0.2141683 0.785284,0.2141684 1.445637,0.6306069 V 10.657911 Q 18.501392,10.092744 17.751803,9.8071864 17.002214,9.5216286 16.175286,9.5216286 q -1.630059,0 -2.451038,0.9102154 -0.81503,0.910216 -0.81503,2.712799 0,1.796635 0.81503,2.70685 0.820979,0.910216 2.451038,0.910216 0.636556,0 1.136282,-0.107084 0.499726,-0.113034 0.898317,-0.345049 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.1838px;line-height:1.25;font-family:'Miriam CLM';-inkscape-font-specification:'Miriam CLM Bold';fill:#1a1a1a;fill-opacity:1;stroke-width:0.83319"
+         id="path14" />
+      <path
+         d="m 21.594935,8.6947008 h 5.61597 v 1.0113505 h -4.414248 v 2.6295117 h 4.229825 v 1.01135 h -4.229825 v 3.218475 h 4.521332 v 1.01135 h -5.723054 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.1838px;line-height:1.25;font-family:'Miriam CLM';-inkscape-font-specification:'Miriam CLM Bold';fill:#1a1a1a;fill-opacity:1;stroke-width:0.83319"
+         id="path16" />
+    </g>
+  </g>
+</svg>
