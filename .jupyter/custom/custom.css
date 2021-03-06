@@ -9,17 +9,16 @@ a hack to deal with our current css styles and no new styling should be added in
     position: relative;
 }
 
-
 body[data-notebook-path$=".ipynb"] #header {
     display: block;
-    position: fixed!important;
+    position: fixed !important;
     width: 100%;
     left: 0;
     top: -77px;
     transition: top 100ms ease-in-out;
 }
 
-body[data-notebook-path$=".ipynb"] #header:hover {
+body[data-notebook-path$=".ipynb"] #header.dropdown {
     top: 0px;
 }
 
@@ -28,3 +27,17 @@ body[data-notebook-path$=".ipynb"] #site {
     height: unset !important;
     margin-top: 40px;
 }
+
+.btn-dropdown {
+    margin-left: auto !important;
+}
+
+.btn-dropdown button {
+    outline: none !important;
+}
+
+.dropdown .btn-dropdown i {
+    transform: rotate(180deg);
+}
+
+/* <i class="fa fa-chevron-down"></i> */
