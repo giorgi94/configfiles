@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=AnyDesk
+GenericName=AnyDesk
+X-GNOME-FullName=AnyDesk
+Exec=/usr/bin/anydesk %u
+Icon=anydesk
+Terminal=false
+TryExec=anydesk
+Categories=Network;GTK;
+MimeType=x-scheme-handler/anydesk;
+Comment=
+Path=
+StartupNotify=false
+X-XFCE-Source=file:///home/gio/.local/share/applications/anydesk.desktop
